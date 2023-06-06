@@ -8,3 +8,14 @@ const checkPalindrome = (word) => {
 
   // ReverseWord
   const reversedWord = cleanedWord.split('').reverse().join('');
+
+   // Controllo se cleanedWord e reverseWord sono uguali
+   if (cleanedWord === reversedWord) {
+    return true; // è una parola palindroma
+    } else {
+    return false; // non è una parola palindroma
+    }
+};
+
+ // Chiedo all'utente di inserire una parola
+ const userInput = prompt('Inserisci una parola:');
