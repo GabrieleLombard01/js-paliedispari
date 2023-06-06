@@ -19,3 +19,10 @@ const checkPalindrome = (word) => {
 
  // Chiedo all'utente di inserire una parola
  const userInput = prompt('Inserisci una parola:');
+
+  // Controllo se la parola è palindroma oppure no
+  if (checkPalindrome(userInput)) {
+    console.log(`${userInput} è una parola palindroma.`);
+  } else {
+    console.log(`${userInput} non è una parola palindroma.`);
+  }
