@@ -1,6 +1,10 @@
 //JS RESET
 console.log('JS OK')
 
+/*________________________________________
+|||||||||| PALINDROME FUNCTION -> |||||||||
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 // Funzione per controllare se una parola è palindroma
 const checkPalindrome = (word) => {
   // Rimuovo spazi e converto tutto in minuscolo
@@ -26,3 +30,8 @@ const checkPalindrome = (word) => {
   } else {
     console.log(`${userInput} non è una parola palindroma.`);
   }
+
+/*___________________________________
+|||||||||| PARI E DISPARI -> |||||||||
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
