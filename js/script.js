@@ -5,3 +5,6 @@ console.log('JS OK')
 const checkPalindrome = (word) => {
   // Rimuovo spazi e converto tutto in minuscolo
   const cleanedWord = word.toLowerCase().replace(/\s/g, '');
+
+  // ReverseWord
+  const reversedWord = cleanedWord.split('').reverse().join('');
