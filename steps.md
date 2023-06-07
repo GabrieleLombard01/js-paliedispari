@@ -8,7 +8,7 @@
 
 <hr>
 
-# FUNZIONE PER GIOCARE A PARI O DISPARI CO LA CPU
+# FUNZIONE PER GIOCARE A PARI O DISPARI CON LA CPU
  - Chiedo all'utente Pari o dispari?
  - Chiedo all'utente di scegliere un numero
  - Genero un numero random per la scelta della CPU

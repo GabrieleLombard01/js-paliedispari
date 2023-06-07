@@ -31,6 +31,4 @@ const checkPalindrome = (word) => {
     console.log(`${userInput} non è una parola palindroma.`);
   }
 
-/*___________________________________
-|||||||||| PARI E DISPARI -> |||||||||
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
