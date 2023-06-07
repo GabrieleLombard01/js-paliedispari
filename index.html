@@ -10,6 +10,19 @@
     <title>Pali e dispari</title>
 </head>
 <body>
+    <!--Pari o dispari?-->
+    <section>
+        <h1>Pari o dispari</h1>
+        <form id="paridispari_form">
+            <input type="number" min="1" step="1" id="number">
+            <select id="choice">
+                <option value="even">PARI</option>
+                <option value="odd">DISPARI</option>
+            </select>
+            <button id="sub-btn" type="submit">OK</button>
+        </form>
+        <p id="evenOdd-result"></p>
+    </section>
     <!--! -MY JS- -->
     <script src="js/pal.js"></script>
     <script src="js/pariDispari.js"></script>
