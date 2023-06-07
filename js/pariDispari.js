@@ -11,11 +11,19 @@ const numberField = document.getElementById('number');
 const choiceField = document.getElementById('choice');
 const resultElement = document.getElementById('evenOdd-result');
 
+// FUNZIONI:
+
 // FUNZIONE per randomizzare
-function getRandomNumber(min, max) {
-	const number = Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomNumber(min = 1, max = 5, isMaxIncluded = true) {
+	if (min >= max) {
+        console.error(`i numeri forniti sono incongruenti.: ${min} è maggiore o uguale a ${max}`);
+        return;
+    }
+    if (isMaxIncluded) max++;
+    const number = Math.floor(Math.random() * (max - min)) + min;
     return number;
 }
+//FUNZIONE per 
 
 // LOGICA ->
 form.addEventListener('sumbit', function(event){
@@ -43,5 +51,12 @@ form.addEventListener('sumbit', function(event){
     const sum = cpuNumber + userNumber;
 
     //Verifico se il risultato è pari o dispari
+    const rightChoice = isEven(sum) ? 'even' : 'odd';
+
+    //Individuo il vincitore
+    const winner = userChoice === rightChoice ? 'Il giocatore ha ' : 'La cpu ha ';
+
+    //Stampo il risultato:
+    resultElement.innerText winner + 'vinto!';
 
 });
