@@ -18,5 +18,15 @@ form.addEventListener('sumbit', function(event){
 
     //Recupero i valori
     const userNumber = parseInt(numberField.value);
-    const choice = choiceField.value;
+    const userChoice = choiceField.value;
+
+    //VALIDAZIONE
+    if(isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
+        alert('Attenzione, il numero scelto non deve essere inferiore a 1 e superiore a 5');
+        return; 
+    }
+    if(!userChoice || (userChoice !== 'even' && userChoice !== 'odd')) {
+        alert('Attenzione, qualcosa è andato storto!');
+        return; 
+    }
 });
