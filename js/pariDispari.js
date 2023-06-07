@@ -23,10 +23,13 @@ function getRandomNumber(min = 1, max = 5, isMaxIncluded = true) {
     const number = Math.floor(Math.random() * (max - min)) + min;
     return number;
 }
-//FUNZIONE per 
+//FUNZIONE per pari o dispari
+function isEven(number){
+    return number % 2 === 0;
+}
 
 // LOGICA ->
-form.addEventListener('sumbit', function(event){
+form.addEventListener('submit', function (event){
     //Blocco l'esecuzione
     event.preventDefault();
 
@@ -45,7 +48,7 @@ form.addEventListener('sumbit', function(event){
     }
 
     // Genero un numero random per la cpu
-    const cpuNumber = getRandomNumber(1,5);
+    const cpuNumber = getRandomNumber(1, 5);
 
     //Sommo i numeri
     const sum = cpuNumber + userNumber;
@@ -57,6 +60,6 @@ form.addEventListener('sumbit', function(event){
     const winner = userChoice === rightChoice ? 'Il giocatore ha ' : 'La cpu ha ';
 
     //Stampo il risultato:
-    resultElement.innerText winner + 'vinto!';
+    resultElement.innerText = winner + 'vinto!';
 
 });
