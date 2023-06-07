@@ -11,6 +11,12 @@ const numberField = document.getElementById('number');
 const choiceField = document.getElementById('choice');
 const resultElement = document.getElementById('evenOdd-result');
 
+// FUNZIONE per randomizzare
+function getRandomNumber(min, max) {
+	const number = Math.floor(Math.random() * (max - min + 1)) + min;
+    return number;
+}
+
 // LOGICA ->
 form.addEventListener('sumbit', function(event){
     //Blocco l'esecuzione
@@ -29,4 +35,13 @@ form.addEventListener('sumbit', function(event){
         alert('Attenzione, qualcosa è andato storto!');
         return; 
     }
+
+    // Genero un numero random per la cpu
+    const cpuNumber = getRandomNumber(1,5);
+
+    //Sommo i numeri
+    const sum = cpuNumber + userNumber;
+
+    //Verifico se il risultato è pari o dispari
+
 });
